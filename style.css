@@ -1,0 +1,19 @@
+#textarea_expander {
+	position: absolute;
+	background-color: #fff;
+	padding: 10px;
+	border: 1px solid #eee;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+}
+
+#textarea_expander textarea {
+	width: 300px;
+	height: 200px;
+}
+
+#textarea_expander a {
+	display: block;
+	text-align: right;
+	padding: 5px;
+}

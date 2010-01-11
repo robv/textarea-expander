@@ -1,0 +1,8 @@
+Please visit http://thisisrobv.com/ for sample usage and 
+more information.
+
+REQUIREMENTS:
+jQuery
+
+SAMPLE USAGE:
+$('textarea.expander').textarea_expander();
