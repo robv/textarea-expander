@@ -10,7 +10,10 @@
 	        $this.bind('focus', function() {
 				$this.before('<div id="textarea_expander"><textarea>' + $this.val() + '</textarea><a href="#">Save</a></div>');
 				
-				$('#textarea_expander textarea').focus();
+				$('#textarea_expander textarea').focus().bind('blur', function() {
+					$this.val($('#textarea_expander textarea').val());
+					$('#textarea_expander').remove();
+				});
 				
 				$('#textarea_expander a').bind('click', function(e) {
 					e.preventDefault();
